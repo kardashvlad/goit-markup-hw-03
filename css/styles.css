@@ -69,11 +69,10 @@ a {
 .header-navigation {
   display: flex;
   align-items: center;
-  flex-grow: 1;
-  margin-right: 76px;
 }
 
 .logo-header {
+  flex-shrink: 0;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -81,14 +80,10 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-header-two {
   color: #2e2f42;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 /* ****************** */
 
@@ -136,10 +131,7 @@ a {
 }
 .header-menu-list {
   display: flex;
-  align-items: center;
-  margin-left: 76px;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .header-menu-link {
@@ -149,14 +141,18 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 /* ****************** */
 
 /* main-beginning */
 
-.container-beginning {
+.main-beginning {
   background-color: #2e2f42;
   padding: 188px 0;
+  flex-shrink: 0;
+  text-align: center;
 }
 .main-beginning-title {
   color: #fff;
@@ -207,6 +203,7 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .main-slogan-paragraph {
   color: #434455;
@@ -355,4 +352,8 @@ a {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+footer .container a {
+  display: inline-block;
+  margin-bottom: 16px;
 }
